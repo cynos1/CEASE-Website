@@ -1,0 +1,211 @@
+[debug] [2021-01-08T22:55:44.891Z] ----------------------------------------------------------------------
+[debug] [2021-01-08T22:55:44.895Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\cynth\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2021-01-08T22:55:44.895Z] CLI Version:   9.1.2
+[debug] [2021-01-08T22:55:44.895Z] Platform:      win32
+[debug] [2021-01-08T22:55:44.896Z] Node Version:  v10.16.3
+[debug] [2021-01-08T22:55:44.898Z] Time:          Fri Jan 08 2021 17:55:44 GMT-0500 (Eastern Standard Time)
+[debug] [2021-01-08T22:55:44.898Z] ----------------------------------------------------------------------
+[debug] [2021-01-08T22:55:44.898Z] 
+[debug] [2021-01-08T22:55:44.953Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-01-08T22:55:44.954Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\cynth\Documents\CEASE main
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2021-01-08T22:56:14.231Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-01-08T22:56:14.232Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-01-08T22:56:14.397Z] <<< HTTP RESPONSE 200 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","expires":"Mon, 01 Jan 1990 00:00:00 GMT","date":"Fri, 08 Jan 2021 22:56:11 GMT","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-01-08T22:56:14.469Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects?pageSize=100  
+ 
+[debug] [2021-01-08T22:56:14.774Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 08 Jan 2021 22:56:12 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  Using project cease-project (CEASE PROJECT) 
+[info] 
+=== Database Setup
+[info] i  database: ensuring required API firebasedatabase.googleapis.com is enabled... 
+[debug] [2021-01-08T22:56:17.597Z] >>> HTTP REQUEST GET https://serviceusage.googleapis.com/v1/projects/cease-project/services/firebasedatabase.googleapis.com  
+ 
+[debug] [2021-01-08T22:56:18.051Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 08 Jan 2021 22:56:15 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] +  database: required API firebasedatabase.googleapis.com is enabled 
+[info] 
+[debug] [2021-01-08T22:56:18.056Z] >>> HTTP REQUEST GET https://firebasedatabase.googleapis.com/v1beta/projects/cease-project/locations/-/instances/cease-project-default-rtdb  
+ 
+[debug] [2021-01-08T22:56:18.435Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 08 Jan 2021 22:56:15 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] Firebase Realtime Database Security Rules allow you to define how your data should be
+[info] structured and when your data can be read from and written to.
+[info] 
+[debug] [2021-01-08T22:57:19.754Z] >>> HTTP REQUEST GET https://cease-project-default-rtdb.firebaseio.com/.settings/rules.json  
+ 
+[debug] [2021-01-08T22:57:20.019Z] <<< HTTP RESPONSE 200 {"server":"nginx","date":"Fri, 08 Jan 2021 22:57:17 GMT","content-type":"application/json; charset=utf-8","content-length":"119","connection":"keep-alive","access-control-allow-origin":"*","cache-control":"no-cache","strict-transport-security":"max-age=31556926; includeSubDomains; preload"}
+[info] +  Database Rules for cease-project-default-rtdb have been written to database.json. 
+[info] Future modifications to database.json will update Realtime Database Security Rules when you run
+[info] firebase deploy.
+[info] 
+=== Firestore Setup
+[debug] [2021-01-08T22:57:20.027Z] >>> HTTP REQUEST GET https://serviceusage.googleapis.com/v1/projects/cease-project/services/firestore.googleapis.com  
+ 
+[debug] [2021-01-08T22:57:20.524Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 08 Jan 2021 22:57:17 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-01-08T22:57:20.525Z] >>> HTTP REQUEST GET https://appengine.googleapis.com/v1/apps/cease-project  
+ 
+[debug] [2021-01-08T22:57:20.920Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 08 Jan 2021 22:57:18 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-01-08T22:57:20.921Z] database_type: CLOUD_FIRESTORE
+[debug] [2021-01-08T22:57:20.922Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-01-08T22:57:20.923Z] > authorizing via signed-in user
+[debug] [2021-01-08T22:57:20.924Z] [iam] checking project cease-project for permissions ["firebase.projects.get"]
+[debug] [2021-01-08T22:57:20.925Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/cease-project:testIamPermissions  
+ {"permissions":["firebase.projects.get"]}
+[debug] [2021-01-08T22:57:21.060Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 08 Jan 2021 22:57:18 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=37","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] Firestore Security Rules allow you to define how and when to allow
+[info] requests. You can keep these rules in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2021-01-08T22:57:39.866Z] >>> HTTP REQUEST GET https://firebaserules.googleapis.com/v1/projects/cease-project/releases?pageSize=10&pageToken=  
+ 
+[debug] [2021-01-08T22:57:40.089Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 08 Jan 2021 22:57:37 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-01-08T22:57:40.090Z] Found ruleset: projects/cease-project/rulesets/1392e5f6-0753-4b38-bac9-50a6bcabff67
+[debug] [2021-01-08T22:57:40.090Z] >>> HTTP REQUEST GET https://firebaserules.googleapis.com/v1/projects/cease-project/rulesets/1392e5f6-0753-4b38-bac9-50a6bcabff67  
+ 
+[debug] [2021-01-08T22:57:40.225Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 08 Jan 2021 22:57:37 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] Firestore indexes allow you to perform complex queries while
+[info] maintaining performance that scales with the size of the result
+[info] set. You can keep index definitions in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2021-01-08T22:58:15.154Z] >>> HTTP REQUEST GET https://firestore.googleapis.com/v1/projects/cease-project/databases/(default)/collectionGroups/-/indexes  
+ 
+[debug] [2021-01-08T22:58:15.155Z] >>> HTTP REQUEST GET https://firestore.googleapis.com/v1/projects/cease-project/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false  
+ 
+[debug] [2021-01-08T22:58:15.428Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 08 Jan 2021 22:58:12 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-01-08T22:58:15.808Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 08 Jan 2021 22:58:13 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+=== Functions Setup
+[info] 
+[info] A functions directory will be created in your project with a Node.js
+[info] package pre-configured. Functions can be deployed with firebase deploy.
+[info] 
+[debug] [2021-01-08T22:58:15.837Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-01-08T22:58:15.839Z] > authorizing via signed-in user
+[debug] [2021-01-08T22:58:15.840Z] [iam] checking project cease-project for permissions ["firebase.projects.get"]
+[debug] [2021-01-08T22:58:15.842Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/cease-project:testIamPermissions  
+ {"permissions":["firebase.projects.get"]}
+[debug] [2021-01-08T22:58:15.948Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 08 Jan 2021 22:58:13 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=46","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-01-08T22:58:15.950Z] >>> HTTP REQUEST POST https://serviceusage.googleapis.com/v1/projects/cease-project/services/cloudfunctions.googleapis.com:enable  
+ 
+[debug] [2021-01-08T22:58:15.951Z] >>> HTTP REQUEST POST https://serviceusage.googleapis.com/v1/projects/cease-project/services/runtimeconfig.googleapis.com:enable  
+ 
+[debug] [2021-01-08T22:58:16.269Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 08 Jan 2021 22:58:13 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-01-08T22:58:17.037Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 08 Jan 2021 22:58:14 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] +  Wrote functions/package.json 
+[info] +  Wrote functions/.eslintrc.js 
+[info] +  Wrote functions/index.js 
+[info] +  Wrote functions/.gitignore 
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2021-01-08T23:00:38.863Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2021-01-08T23:00:38.953Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2021-01-08T23:00:38.953Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"8.2.2","browserURL":"https://www.gstatic.com/firebasejs/8.2.2/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/8.2.2/firebase.tgz"},"live":{"version":"8.2","browserURL":"https://www.gstatic.com/firebasejs/live/8.2/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/8.2/firebase.tgz"},"components":{"analytics":"https://www.gstatic.com/firebasejs/8.2.2/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/8.2.2/firebase-app.js","auth":"https://www.gstatic.com/firebasejs/8.2.2/firebase-auth.js","database":"https://www.gstatic.com/firebasejs/8.2.2/firebase-database.js","firestore":"https://www.gstatic.com/firebasejs/8.2.2/firebase-firestore.js","functions":"https://www.gstatic.com/firebasejs/8.2.2/firebase-functions.js","installations":"https://www.gstatic.com/firebasejs/8.2.2/firebase-installations.js","messaging":"https://www.gstatic.com/firebasejs/8.2.2/firebase-messaging.js","storage":"https://www.gstatic.com/firebasejs/8.2.2/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/8.2.2/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/8.2.2/firebase-remote-config.js","firestore.memory":"https://www.gstatic.com/firebasejs/8.2.2/firebase-firestore.memory.js"}}
+[info] +  Wrote public/index.html 
+[info] 
+[info] i  Detected a .git folder at C:\Users\cynth\Documents\CEASE main 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=705230119&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2021-01-08T23:01:08.581Z] >>> HTTP REQUEST POST https://github.com/login/oauth/access_token  
+ {"client_id":"89cf50f02ac6aaed3484","client_secret":"3330d14abc895d9a74d5f17cd7a00711fa2c5bf0","code":"c0e22055cb7e77969e6a","redirect_uri":"http://localhost:9005","state":"705230119"}
+[debug] [2021-01-08T23:01:08.736Z] <<< HTTP RESPONSE 200 {"server":"GitHub.com","date":"Fri, 08 Jan 2021 23:01:06 GMT","content-type":"application/json; charset=utf-8","transfer-encoding":"chunked","status":"200 OK","vary":"X-PJAX, Accept-Encoding, Accept, X-Requested-With","etag":"W/\"49ca9491253fac63504210710189f7e0\"","cache-control":"max-age=0, private, must-revalidate","strict-transport-security":"max-age=31536000; includeSubdomains; preload","x-frame-options":"deny","x-content-type-options":"nosniff","x-xss-protection":"1; mode=block","referrer-policy":"origin-when-cross-origin, strict-origin-when-cross-origin","expect-ct":"max-age=2592000, report-uri=\"https://api.github.com/_private/browser/errors\"","content-security-policy":"default-src 'none'; base-uri 'self'; block-all-mixed-content; connect-src 'self' uploads.github.com www.githubstatus.com collector.githubapp.com api.github.com github-cloud.s3.amazonaws.com github-production-repository-file-5c1aeb.s3.amazonaws.com github-production-upload-manifest-file-7fdce7.s3.amazonaws.com github-production-user-asset-6210df.s3.amazonaws.com cdn.optimizely.com logx.optimizely.com/v1/events wss://alive.github.com; font-src github.githubassets.com; form-action 'self' github.com gist.github.com; frame-ancestors 'none'; frame-src render.githubusercontent.com; img-src 'self' data: github.githubassets.com identicons.github.com collector.githubapp.com github-cloud.s3.amazonaws.com *.githubusercontent.com; manifest-src 'self'; media-src 'none'; script-src github.githubassets.com; style-src 'unsafe-inline' github.githubassets.com; worker-src github.com/socket-worker-5029ae85.js gist.github.com/socket-worker-5029ae85.js","x-github-request-id":"DDD9:0ED0:4F4845:7654A1:5FF8E431"}
+[debug] [2021-01-08T23:01:08.737Z] >>> [apiv2][query] GET https://api.github.com/user [none]
+[debug] [2021-01-08T23:01:08.900Z] <<< [apiv2][status] GET https://api.github.com/user 200
+[debug] [2021-01-08T23:01:08.900Z] <<< [apiv2][body] GET https://api.github.com/user {"login":"cynos1","id":36894951,"node_id":"MDQ6VXNlcjM2ODk0OTUx","avatar_url":"https://avatars2.githubusercontent.com/u/36894951?v=4","gravatar_id":"","url":"https://api.github.com/users/cynos1","html_url":"https://github.com/cynos1","followers_url":"https://api.github.com/users/cynos1/followers","following_url":"https://api.github.com/users/cynos1/following{/other_user}","gists_url":"https://api.github.com/users/cynos1/gists{/gist_id}","starred_url":"https://api.github.com/users/cynos1/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/cynos1/subscriptions","organizations_url":"https://api.github.com/users/cynos1/orgs","repos_url":"https://api.github.com/users/cynos1/repos","events_url":"https://api.github.com/users/cynos1/events{/privacy}","received_events_url":"https://api.github.com/users/cynos1/received_events","type":"User","site_admin":false,"name":null,"company":null,"blog":"","location":null,"email":null,"hireable":null,"bio":null,"twitter_username":null,"public_repos":2,"public_gists":0,"followers":0,"following":0,"created_at":"2018-02-27T16:41:59Z","updated_at":"2021-01-08T23:01:05Z","private_gists":0,"total_private_repos":1,"owned_private_repos":1,"disk_usage":66221,"collaborators":0,"two_factor_authentication":false,"plan":{"name":"free","space":976562499,"collaborators":0,"private_repos":10000}}
+[info] 
+[info] +  Success! Logged into GitHub as cynos1 
+[info] 
+[debug] [2021-01-08T23:04:50.626Z] >>> [apiv2][query] GET https://api.github.com/repos/cynos1/CEASE-Website/actions/secrets/public-key type=owner
+[debug] [2021-01-08T23:04:50.771Z] <<< [apiv2][status] GET https://api.github.com/repos/cynos1/CEASE-Website/actions/secrets/public-key 200
+[debug] [2021-01-08T23:04:50.771Z] <<< [apiv2][body] GET https://api.github.com/repos/cynos1/CEASE-Website/actions/secrets/public-key {"key_id":"568250167242549743","key":"ZOgZIMnmTKCevfjVxF2D2Fy/DyaULUiY6KtEIpHZIyE="}
+[debug] [2021-01-08T23:04:50.774Z] >>> [apiv2][query] GET https://api.github.com/repos/cynos1/CEASE-Website [none]
+[debug] [2021-01-08T23:04:50.905Z] <<< [apiv2][status] GET https://api.github.com/repos/cynos1/CEASE-Website 200
+[debug] [2021-01-08T23:04:50.905Z] <<< [apiv2][body] GET https://api.github.com/repos/cynos1/CEASE-Website {"id":328031327,"node_id":"MDEwOlJlcG9zaXRvcnkzMjgwMzEzMjc=","name":"CEASE-Website","full_name":"cynos1/CEASE-Website","private":false,"owner":{"login":"cynos1","id":36894951,"node_id":"MDQ6VXNlcjM2ODk0OTUx","avatar_url":"https://avatars2.githubusercontent.com/u/36894951?v=4","gravatar_id":"","url":"https://api.github.com/users/cynos1","html_url":"https://github.com/cynos1","followers_url":"https://api.github.com/users/cynos1/followers","following_url":"https://api.github.com/users/cynos1/following{/other_user}","gists_url":"https://api.github.com/users/cynos1/gists{/gist_id}","starred_url":"https://api.github.com/users/cynos1/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/cynos1/subscriptions","organizations_url":"https://api.github.com/users/cynos1/orgs","repos_url":"https://api.github.com/users/cynos1/repos","events_url":"https://api.github.com/users/cynos1/events{/privacy}","received_events_url":"https://api.github.com/users/cynos1/received_events","type":"User","site_admin":false},"html_url":"https://github.com/cynos1/CEASE-Website","description":null,"fork":false,"url":"https://api.github.com/repos/cynos1/CEASE-Website","forks_url":"https://api.github.com/repos/cynos1/CEASE-Website/forks","keys_url":"https://api.github.com/repos/cynos1/CEASE-Website/keys{/key_id}","collaborators_url":"https://api.github.com/repos/cynos1/CEASE-Website/collaborators{/collaborator}","teams_url":"https://api.github.com/repos/cynos1/CEASE-Website/teams","hooks_url":"https://api.github.com/repos/cynos1/CEASE-Website/hooks","issue_events_url":"https://api.github.com/repos/cynos1/CEASE-Website/issues/events{/number}","events_url":"https://api.github.com/repos/cynos1/CEASE-Website/events","assignees_url":"https://api.github.com/repos/cynos1/CEASE-Website/assignees{/user}","branches_url":"https://api.github.com/repos/cynos1/CEASE-Website/branches{/branch}","tags_url":"https://api.github.com/repos/cynos1/CEASE-Website/tags","blobs_url":"https://api.github.com/repos/cynos1/CEASE-Website/git/blobs{/sha}","git_tags_url":"https://api.github.com/repos/cynos1/CEASE-Website/git/tags{/sha}","git_refs_url":"https://api.github.com/repos/cynos1/CEASE-Website/git/refs{/sha}","trees_url":"https://api.github.com/repos/cynos1/CEASE-Website/git/trees{/sha}","statuses_url":"https://api.github.com/repos/cynos1/CEASE-Website/statuses/{sha}","languages_url":"https://api.github.com/repos/cynos1/CEASE-Website/languages","stargazers_url":"https://api.github.com/repos/cynos1/CEASE-Website/stargazers","contributors_url":"https://api.github.com/repos/cynos1/CEASE-Website/contributors","subscribers_url":"https://api.github.com/repos/cynos1/CEASE-Website/subscribers","subscription_url":"https://api.github.com/repos/cynos1/CEASE-Website/subscription","commits_url":"https://api.github.com/repos/cynos1/CEASE-Website/commits{/sha}","git_commits_url":"https://api.github.com/repos/cynos1/CEASE-Website/git/commits{/sha}","comments_url":"https://api.github.com/repos/cynos1/CEASE-Website/comments{/number}","issue_comment_url":"https://api.github.com/repos/cynos1/CEASE-Website/issues/comments{/number}","contents_url":"https://api.github.com/repos/cynos1/CEASE-Website/contents/{+path}","compare_url":"https://api.github.com/repos/cynos1/CEASE-Website/compare/{base}...{head}","merges_url":"https://api.github.com/repos/cynos1/CEASE-Website/merges","archive_url":"https://api.github.com/repos/cynos1/CEASE-Website/{archive_format}{/ref}","downloads_url":"https://api.github.com/repos/cynos1/CEASE-Website/downloads","issues_url":"https://api.github.com/repos/cynos1/CEASE-Website/issues{/number}","pulls_url":"https://api.github.com/repos/cynos1/CEASE-Website/pulls{/number}","milestones_url":"https://api.github.com/repos/cynos1/CEASE-Website/milestones{/number}","notifications_url":"https://api.github.com/repos/cynos1/CEASE-Website/notifications{?since,all,participating}","labels_url":"https://api.github.com/repos/cynos1/CEASE-Website/labels{/name}","releases_url":"https://api.github.com/repos/cynos1/CEASE-Website/releases{/id}","deployments_url":"https://api.github.com/repos/cynos1/CEASE-Website/deployments","created_at":"2021-01-08T23:03:25Z","updated_at":"2021-01-08T23:03:25Z","pushed_at":"2021-01-08T23:03:26Z","git_url":"git://github.com/cynos1/CEASE-Website.git","ssh_url":"git@github.com:cynos1/CEASE-Website.git","clone_url":"https://github.com/cynos1/CEASE-Website.git","svn_url":"https://github.com/cynos1/CEASE-Website","homepage":null,"size":0,"stargazers_count":0,"watchers_count":0,"language":null,"has_issues":true,"has_projects":true,"has_downloads":true,"has_wiki":true,"has_pages":false,"forks_count":0,"mirror_url":null,"archived":false,"disabled":false,"open_issues_count":0,"license":null,"forks":0,"open_issues":0,"watchers":0,"default_branch":"main","permissions":{"admin":true,"push":true,"pull":true},"temp_clone_token":"","allow_squash_merge":true,"allow_merge_commit":true,"allow_rebase_merge":true,"delete_branch_on_merge":false,"network_count":0,"subscribers_count":1}
+[debug] [2021-01-08T23:04:50.908Z] >>> HTTP REQUEST POST https://iam.googleapis.com/v1/projects/cease-project/serviceAccounts  
+ {"accountId":"github-action-328031327","serviceAccount":{"displayName":"GitHub Actions (cynos1/CEASE-Website)","description":"A service account with permission to deploy to Firebase Hosting for the GitHub repository cynos1/CEASE-Website"}}
+[debug] [2021-01-08T23:04:52.019Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 08 Jan 2021 23:04:48 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-01-08T23:04:52.021Z] >>> HTTP REQUEST GET https://iam.googleapis.com/v1/projects/cease-project/serviceAccounts/github-action-328031327@cease-project.iam.gserviceaccount.com  
+ 
+[debug] [2021-01-08T23:04:52.022Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/cease-project:getIamPolicy  
+ 
+[debug] [2021-01-08T23:04:52.195Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 08 Jan 2021 23:04:49 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-01-08T23:04:52.212Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 08 Jan 2021 23:04:49 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=117","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-01-08T23:04:52.214Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/cease-project:setIamPolicy  
+ {"policy":{"version":1,"etag":"BwW4a33QnCM=","bindings":[{"role":"roles/cloudfunctions.serviceAgent","members":["serviceAccount:service-1040376864167@gcf-admin-robot.iam.gserviceaccount.com"]},{"role":"roles/editor","members":["serviceAccount:cease-project@appspot.gserviceaccount.com"]},{"role":"roles/firebase.managementServiceAgent","members":["serviceAccount:firebase-service-account@firebase-sa-management.iam.gserviceaccount.com"]},{"role":"roles/firebase.sdkAdminServiceAgent","members":["serviceAccount:firebase-adminsdk-enfin@cease-project.iam.gserviceaccount.com"]},{"role":"roles/firebasedatabase.admin","members":["serviceAccount:firebase-adminsdk-enfin@cease-project.iam.gserviceaccount.com"]},{"role":"roles/firebaserules.system","members":["serviceAccount:service-1040376864167@firebase-rules.iam.gserviceaccount.com"]},{"role":"roles/iam.serviceAccountTokenCreator","members":["serviceAccount:firebase-adminsdk-enfin@cease-project.iam.gserviceaccount.com"]},{"role":"roles/owner","members":["user:cynthiasamuels98@gmail.com"]},{"role":"roles/firebaseauth.admin","members":["serviceAccount:github-action-328031327@cease-project.iam.gserviceaccount.com"]},{"role":"roles/serviceusage.apiKeysViewer","members":["serviceAccount:github-action-328031327@cease-project.iam.gserviceaccount.com"]},{"role":"roles/firebasehosting.admin","members":["serviceAccount:github-action-328031327@cease-project.iam.gserviceaccount.com"]},{"role":"roles/run.viewer","members":["serviceAccount:github-action-328031327@cease-project.iam.gserviceaccount.com"]}]},"updateMask":"bindings"}
+[debug] [2021-01-08T23:04:52.735Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 08 Jan 2021 23:04:50 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=477","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-01-08T23:04:52.735Z] >>> HTTP REQUEST POST https://iam.googleapis.com/v1/projects/cease-project/serviceAccounts/github-action-328031327@cease-project.iam.gserviceaccount.com/keys  
+ {"keyAlgorithm":"KEY_ALG_UNSPECIFIED","privateKeyType":"TYPE_GOOGLE_CREDENTIALS_FILE"}
+[debug] [2021-01-08T23:04:53.199Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 08 Jan 2021 23:04:50 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] +  Created service account github-action-328031327 with Firebase Hosting admin permissions. 
+[debug] [2021-01-08T23:04:53.266Z] >>> [apiv2][query] PUT https://api.github.com/repos/cynos1/CEASE-Website/actions/secrets/FIREBASE_SERVICE_ACCOUNT_CEASE_PROJECT [none]
+[debug] [2021-01-08T23:04:53.266Z] >>> [apiv2][body] PUT https://api.github.com/repos/cynos1/CEASE-Website/actions/secrets/FIREBASE_SERVICE_ACCOUNT_CEASE_PROJECT {"encrypted_value":"kmoCk9BC/D6xfh9OHS4Dc2ORyZLzs7LvyIv872wMYWNnEKzTmTv1yZPykrCgKrYuzpahyHyaliyKYLeUNvUPR5dYoj90R9G2udRfXWBymIlVpPrrz9fWb4IbU7h6OGxtnZpB+8C5oPasxsi5NM14l2za1rRJDbfyDfrDc81ycZNAKJ/nt7rovgNfGdqpYLIqn4dGqk9g6NPUivN7lJMfKY5yCjV4uS69dvUrmdvydRSosCY5Gq5hYVZ5m7K2iPkwAh3ytrY1pcp/BKzvz5OTevpIIkWCw2YHoksInQsYYrZMyR9tlsb8Farjn/qxwIoZgYno3VwBs3H7IGq5fRRpPhPu9xOpCeY+Hu8Es0OZ5IKtiEeHEWMVQYrZrN9EQH8yLTsVKap3lXaRy45h1WeV5y+k+etC5eokrMT/jjqmQckSHH7HjnIFTDYYbDopnPriT9KZRzQORDWkxVebL21XOJp/A3iSPNMTCiJLu1ltGJnJTOgfVHjELer+NhtjhGfDFs2gxndyTY2lB8+ZEuJAnE1vVS+Wd1Wd13ahuECxrOyPCYR9QBfBAozr8vu5zWPtLs5yGxuJmUxO8nOpS5unEP0OrMtaRUEcLYbnlaW9N14AsPrDhRe9CxAEK7A9048MJp4A3Ng9RXnU2626syH1E82hIt3xTnGuP5kavrGhPkAav+p+zJ0GWDge8Ziegql1P6bYtDLm2U34XkM8i2lPOmj/7EwA49G1NWAm7JqYpK8gLEbZdInRvC9W9nhs3tFDCpWcuMIZg8So1CvDkTr/JQJnO8wgUHWvwc+KJJHpB87Gr8iNRDcLAz6LZuxxtl4kvttvld3AgeTHY6Pf5UuQ5BQfnP4FKFxLuZOi5tslUrYhZpL+Cuxz8L37o7OG4WNgh06XHrhg13lPcNjc/YJgQ/zaFbmqpop8h11998Do00bbZV+2sy7XaMtsPa0jCOWUSNAjhOU0mZoJcbeoboM5BHl9/HN0qEFl2OIKlOgGtwMZyc/ZRsDgHGainlldZoT6jUhn4wcZL77R4d/BX8WvmmNrbpFKp10dbx2JIY34bj6PaJV5loAfminyEnSAGsbhhbTxFNgWcYzN0X+BczGIzRxXfGxvaMVmFBhibaxLQk7elLYw3Ig7OKhyEoUxrbqRtBB3/KCwpVb6pH8eD3HT8owdJc2aRBvlGCy/0Go7WIwkZfLmdFa5O7BlQr7nAQ+UFGDa4kyp4dspmgPySXEPL3pf4jwGnn2yoJ8nrUt7tyu7YpB01DJ+xc7Wr8VJTm2PnaUJ9yvfrNpGUOIgmm26SR6IcY3thw4D+Iqp4vCQdBjbsSpitecLg5gIQG+cQgp2oo1UPqhO9bccjPak66iLQuOLWLpwzdw1v4dLhrZPPPCfie3xDKmn/Dl0Ob6IhQ21LmNubAQBYTNTPpk0scXt6/jEpdfvkqAwvwvP1dJMakXgZo+Va5JzYy55MV0l0I3nR17+q/Uh95UI/ntMYfvG8fvRWHP9ZIfVE26gcM8MFHCuTe0nuwGzemvg3wMfP9AXzs6+Y7r0R2KEteiDjaReucfry0zOwC/S7xPOtLBRJVgOZO3io+sJs0B+4bUHLi0s5neiSGI1Ztrcy1pZsOcgdB2jybhgC2goxozdR1AUgbUCg9nyACF7vAUSq++R6KxCgzOyfUQNY8X243S1aWxImb/nuIoNFefBqHZgKMEUQmID7sJ1rC8tvMqZSoqBjy3v2xIscgg8QgsQXfv6HDYpRHhXKPkESBYgGqiNwbN4uU8+3Ovfme6KOkai65raoK4Vm1Dm0tcunn0j/Mi+ySxaydQxNDccGADgJMj3csiNvS6IjZq+ONTpsOd9kue05pYvRJyptCcfH099oJG3NOvc1YSagmQgPgOAA0EqhmtNkH4/vv3IVcV7BadOdrBXCDzAEMDxdVHlfIZwR/XCkeUXxAJScCH0+QGyKLBhZQ2Vj2rtJOShMvHl0INjwNwM6gjr3DEGfvePnvkz3SDHFpFwKmU0w4rNF6TwEqIlkX5LmJxOE1wJN9OnBZCbgQ6Z4vt7Df/p7azuB1dpbNpQvUgCAlVUxoxNRx0PS08+v0wxpK0e89DH5qe3h9jdO1wBdRBgdhL5B6lNAHk7P0J8hCAMzM5vfs2wxgDPtdqJqI9VOmora0kX0f1yDY7o1syHSu5G8slcmVFyB3d56Srsz7+kWp9XEKd/xzKIRuJePVhXlRqcLr8sZKKrnEk8/CKeSa5Kv9BlbEO33x1sPNdx5OcqpJlcRZ3xHihGYvCTdfnNZ06ZVxdqnUe8Y3WBswlTy6AD94CnUcWlLWxhepHawiMoqnjuqXvRn/Q/HkMk6YjHia9gid+/q7rLAJKT1nAz2ib8g51F8IFclyEARWoD3HJodo8MCjEkw1Ku4UU8paDetr+5H8/XhG9oXa5tZshBdp+yGOt8Edui+VIDulp6gTE0dIqJZRdANDhphPeOkQm0itwEqr0Y7/9AfEwDwPPSploqvMuvGDcjPRotOjL9lsu4vWKb7Ou1pG24Blm1FlUiHsdgvCoW2sS/dBxi1JD/bkWcwDDDTAT7u2iJCDYJgat+bqJ2WRk/pbTuiVvLh20E1EoDLESNswqfzk54S07TfiqJCH2Dr/1hLWB+fZr5x+ycvpMulJf+g6PSsthCqa2NGj093MNTGczWsoJ7sViZeQ5GEEuzGAQyhBdWapi5Llk4lyPwJV+N5HMMXrtMEcwEDCt0jk06iLC1ky2hMEs5r35PEjwLFSDE1RWLFKEG+dcSrRvWFdzpj6Ct0jBcpEJhjo39TLuVe22ySPXEIcNh2++M/LhWT2pJ3MemzlQH4ZdnA1h4afd8c8ilbmZj1sqnrE0H11Vef3ew8sBNWg6wz8ihsPyQToPJ7sQvzFd1IuvDjU6zVf/o0NOZWQsAR+eV0iJCE+hTGt7ngrVkj8hVY2ZKjRLHbYz7ZhbdqJdyaFDg0nMyYglhlTx89MCvMLP6xXEq9cmCDbo2ZCL8Q4uPrgpDfyowL3NPzPCsi3yDaaoCc3HtHOo/IXhlSTT5KW8ZgGK0On4rKB/49MbYhgDXzdcux0MrnLeMx1h0S6d/9MOFIfB572Uu3f03rSxAY2RRP2Ue4TOBiT8Ujmb3m4CrF4XnXX528Qx7VLlp+8MGEEcatst/WHNyFfVKe+PBM6r65fVVezY8","key_id":"568250167242549743"}
+[debug] [2021-01-08T23:04:53.524Z] <<< [apiv2][status] PUT https://api.github.com/repos/cynos1/CEASE-Website/actions/secrets/FIREBASE_SERVICE_ACCOUNT_CEASE_PROJECT 201
+[debug] [2021-01-08T23:04:53.524Z] <<< [apiv2][body] PUT https://api.github.com/repos/cynos1/CEASE-Website/actions/secrets/FIREBASE_SERVICE_ACCOUNT_CEASE_PROJECT {}
+[info] +  Uploaded service account JSON to GitHub as secret FIREBASE_SERVICE_ACCOUNT_CEASE_PROJECT. 
+[info] i  You can manage your secrets at https://github.com/cynos1/CEASE-Website/settings/secrets. 
+[info] 
+[info] 
+[info] +  Created workflow file C:\Users\cynth\Documents\CEASE main\.github/workflows/firebase-hosting-pull-request.yml 
+[info] 
+[info] +  Created workflow file C:\Users\cynth\Documents\CEASE main\.github/workflows/firebase-hosting-merge.yml 
+[info] 
+[info] i  Action required: Visit this URL to revoke authorization for the Firebase CLI GitHub OAuth App: 
+[info] https://github.com/settings/connections/applications/89cf50f02ac6aaed3484
+[info] i  Action required: Push any new workflow file(s) to your repo 
+[info] 
+=== Storage Setup
+[info] 
+[info] Firebase Storage Security Rules allow you to define how and when to allow
+[info] uploads and downloads. You can keep these rules in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[info] 
+=== Emulators Setup
+[info] i  firestore: downloading cloud-firestore-emulator-v1.11.11.jar... {"metadata":{"emulator":{"name":"firestore"},"message":"downloading cloud-firestore-emulator-v1.11.11.jar..."}}
+[debug] [2021-01-08T23:14:04.014Z] >>> [apiv2][query] GET https://storage.googleapis.com/firebase-preview-drop/emulator/cloud-firestore-emulator-v1.11.11.jar [none]
+[debug] [2021-01-08T23:14:04.189Z] <<< [apiv2][status] GET https://storage.googleapis.com/firebase-preview-drop/emulator/cloud-firestore-emulator-v1.11.11.jar 200
+[debug] [2021-01-08T23:14:04.189Z] <<< [apiv2][body] GET https://storage.googleapis.com/firebase-preview-drop/emulator/cloud-firestore-emulator-v1.11.11.jar [stream]
+[info] i  database: downloading firebase-database-emulator-v4.7.2.jar... {"metadata":{"emulator":{"name":"database"},"message":"downloading firebase-database-emulator-v4.7.2.jar..."}}
+[debug] [2021-01-08T23:14:55.813Z] >>> [apiv2][query] GET https://storage.googleapis.com/firebase-preview-drop/emulator/firebase-database-emulator-v4.7.2.jar [none]
+[debug] [2021-01-08T23:14:56.018Z] <<< [apiv2][status] GET https://storage.googleapis.com/firebase-preview-drop/emulator/firebase-database-emulator-v4.7.2.jar 200
+[debug] [2021-01-08T23:14:56.018Z] <<< [apiv2][body] GET https://storage.googleapis.com/firebase-preview-drop/emulator/firebase-database-emulator-v4.7.2.jar [stream]
+[info] i  pubsub: downloading pubsub-emulator-0.1.0.zip... {"metadata":{"emulator":{"name":"pubsub"},"message":"downloading pubsub-emulator-0.1.0.zip..."}}
+[debug] [2021-01-08T23:15:00.606Z] >>> [apiv2][query] GET https://storage.googleapis.com/firebase-preview-drop/emulator/pubsub-emulator-0.1.0.zip [none]
+[debug] [2021-01-08T23:15:00.760Z] <<< [apiv2][status] GET https://storage.googleapis.com/firebase-preview-drop/emulator/pubsub-emulator-0.1.0.zip 200
+[debug] [2021-01-08T23:15:00.760Z] <<< [apiv2][body] GET https://storage.googleapis.com/firebase-preview-drop/emulator/pubsub-emulator-0.1.0.zip [stream]
+[info] i  ui: downloading ui-v1.4.1.zip... {"metadata":{"emulator":{"name":"ui"},"message":"downloading ui-v1.4.1.zip..."}}
+[debug] [2021-01-08T23:15:05.770Z] >>> [apiv2][query] GET https://storage.googleapis.com/firebase-preview-drop/emulator/ui-v1.4.1.zip [none]
+[info] 
+=== Remoteconfig Setup
+[debug] [2021-01-08T23:15:05.871Z] <<< [apiv2][status] GET https://storage.googleapis.com/firebase-preview-drop/emulator/ui-v1.4.1.zip 200
+[debug] [2021-01-08T23:15:05.871Z] <<< [apiv2][body] GET https://storage.googleapis.com/firebase-preview-drop/emulator/ui-v1.4.1.zip [stream]

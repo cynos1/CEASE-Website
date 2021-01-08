@@ -1,0 +1,180 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="activity6.3.css">
+<title>Untitled Document</title>
+</head>
+
+<body>
+	<nav class="topnav" id="myTopnav">
+	<div>
+		<img src="cease logo.png" width="50" height="50" id="logo" alt=""/>
+  <a href="index.html"><strong>Home</strong></a>
+  
+		<div class="navbar">
+  <div class="dropdown">
+    <button class="dropbtn"><strong>My Account</strong> 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="profile page.html"><i class="fa fa-user-circle" aria-hidden="true"></i><strong> My Profile</strong></a>
+      <a href="materials.html"><i class="fa fa-info-circle" aria-hidden="true"></i> <strong>My Materials</strong></a>
+      <a href="#"><i class="fa fa-comments" aria-hidden="true"></i> <strong>Discussion Board</strong></a>
+    </div>
+  </div> 
+</div>  	
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+	</nav>
+	<p style="text-align: center"><strong>When am i at risk for smoking?</strong></p>
+	<form id="survey-form" action="progress module 2.html">
+		<div class="tab">
+		<div class="form-group" >
+			
+	<p style="color:#89287c; font-size: 14px;">
+	<u>Times of Day</u></p>		
+	<label>
+		<input name="improve" value="tribute" type="checkbox" class="input-checkbox" />Having a meal
+		  </label>
+			<br>
+	<label>
+		<input name="improve" value="tribute" type="checkbox" class="input-checkbox"/>
+		Watching Tv			</label>
+			<br>		
+	<label>
+		<input name="improve" value="tribute" type="checkbox" class="input-checkbox"  />
+		Having coffee/ Tea			</label>
+			<br>		
+	<label>
+		<input name="improve" value="tribute" type="checkbox" class="input-checkbox" />
+		Talking on the phone			</label>
+			<br>
+			<label>
+		<input name="improve" value="tribute" type="checkbox" class="input-checkbox" />
+		Waking up				</label>
+							<br>
+			<label>
+		<input name="improve" value="tribute" type="checkbox" class="input-checkbox" />
+		Home from work</label>
+			<br>
+			</div>
+		</div>
+		
+		<div class="tab">
+		<div class="form-group" >
+			<p style="color:#89287c; font-size: 14px;">
+	<u>With People</u></p>		
+	<label>
+		<input name="improve" value="tribute" type="checkbox" class="input-checkbox" />Friend is smoking
+		  </label>
+			<br>
+	<label>
+		<input name="improve" value="tribute" type="checkbox" class="input-checkbox" />Family Stress
+		  </label>
+			<br>		
+	<label>
+		<input name="improve" value="tribute" type="checkbox" class="input-checkbox" />Celebrations
+		  </label>
+			<br>				
+	<label>
+		<input name="improve" value="tribute" type="checkbox" class="input-checkbox"/>Being around smokers
+		  </label>
+			<br>
+			</div>
+		</div>
+		
+		<div class="tab">
+		<div class="form-group" >
+		  <p style="color:#89287c; font-size: 14px;">
+	<u>At Places&nbsp;</u></p>		
+	<label>
+		<input name="improve" value="tribute" type="checkbox" class="input-checkbox" />
+		Work&nbsp; &nbsp;&nbsp; </label>
+			<br>		
+    <label>
+		<input name="improve" value="tribute" type="checkbox" class="input-checkbox" />
+		Home/Certain Rooms&nbsp; &nbsp;&nbsp; </label>
+			<br>	
+			
+	<label>
+		<input name="improve" value="tribute" type="checkbox" class="input-checkbox"/>
+		Outdoors&nbsp;&nbsp;&nbsp;			</label>
+			<br>	
+	 <label>
+		<input name="improve" value="tribute" type="checkbox" class="input-checkbox" data-validator="checkbox_limit"/>
+		Sporting events&nbsp; &nbsp;&nbsp; </label>
+			<br>
+    <label>
+		<input name="improve" value="tribute" type="checkbox" class="input-checkbox" data-validator="checkbox_limit"/>
+		Break Time&nbsp; &nbsp;&nbsp; </label>
+			<br>		
+	
+			</div>
+		</div>
+		
+		<div class="tab">
+		<div class="form-group" >
+			 <p style="color:#89287c; font-size: 14px;">
+	<u>Feeling Emotional&nbsp;</u></p>		
+	<label>
+		<input name="improve" value="tribute" type="checkbox" class="input-checkbox" />
+		When i'm angry&nbsp; &nbsp; &nbsp; </label>
+			<br>		
+    <label>
+		<input name="improve" value="tribute" type="checkbox" class="input-checkbox" />
+		When I'm bored&nbsp; &nbsp; &nbsp; </label>
+			<br>	
+			
+	<label>
+		<input name="improve" value="tribute" type="checkbox" class="input-checkbox"/>
+		When I'm relaxing&nbsp; &nbsp; &nbsp;&nbsp; </label>
+			<br>	
+	 <label>
+		<input name="improve" value="tribute" type="checkbox" class="input-checkbox" data-validator="checkbox_limit"/>
+		&nbsp;When I'm stressed&nbsp; &nbsp; &nbsp; </label>
+			
+			</div>
+		</div>
+		
+		<div class="tab">
+		<div class="form-group" >
+			<br>		
+		<div class="form-group">
+			<br>
+			<em style="color: #89287c;">Add any additional triggers below:</em>
+			
+			<br>
+			<textarea style="background-color: white;" name="comments" class="form-control" id="comments" rows="8" cols="50" placeholder="Begin typing here..."></textarea>
+			
+		</div>
+			</div>
+			<br>
+	
+		</div>
+		
+			
+	<div style="overflow:auto;">
+    <div style="float:right;">
+      <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+      <button type="button" id="nextBtn" onclick="nextPrev(1)"> Next</button>
+	  
+    </div>
+  </div>
+  <!-- Circles which indicates the steps of the form: -->
+  <div style="text-align:center;margin-top:40px;">
+    <span class="step"></span>
+    <span class="step"></span>
+    <span class="step"></span>
+    <span class="step"></span>
+	<span class="step"></span>
+  </div>
+	</form>
+	
+</body>
+<script src="activity6.3.js" ></script>
+</html>

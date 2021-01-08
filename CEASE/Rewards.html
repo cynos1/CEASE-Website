@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+</head>
+
+<body>
+	<nav class="topnav" id="myTopnav">
+	<div>
+		<img src="cease logo.png" width="50" height="50" id="logo" alt=""/>
+  <a href="index.html"><strong>Home</strong></a>
+  
+		<div class="navbar">
+  <div class="dropdown">
+    <button class="dropbtn"><strong>My Account</strong> 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="profile page.html"><i class="fa fa-user-circle" aria-hidden="true"></i><strong> My Profile</strong></a>
+      <a href="materials.html"><i class="fa fa-info-circle" aria-hidden="true"></i> <strong>My Materials</strong></a>
+      <a href="#"><i class="fa fa-comments" aria-hidden="true"></i> <strong>Discussion Board</strong></a>
+    </div>
+  </div> 
+</div>  	
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+	</nav>
+	<br>
+	<br>
+	<p style="font-size: 20px; color: #005d9b; text-align: center;">Rewards</p>
+	<h3 style="color: #005d9b; text-align: center;">Make sure to reward yourself everytime you achieve your weekly goals</h3>
+	<form name="ShoppingList" id="rewards">
+    <fieldset>
+       <div class="ui-widget"> 
+        <label for="tags">ADD: <input id="tags" type="text" name="name"></label>
+		</div>
+        <label>Date: <input type="date" name="data"></label>
+
+        <input type="button" value="Save"   onclick="SaveItem()">
+        <input type="button" value="Update" onclick="ModifyItem()">
+        <input type="button" value="Delete" onclick="RemoveItem()">
+    </fieldset>
+    <div id="items_table"><br>
+        <h2>My Rewards  List</h2>
+        <table id="list" width="500" border="1" bordercolordark="#89287c">
+  <tbody>
+    <tr>
+      <th scope="col">&nbsp;</th>
+      <th scope="col">&nbsp;</th>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+  </tbody>
+</table>
+
+        <label><input type="button" value="Clear" onclick="ClearAll()">
+        </label>
+    </div>
+</form>
+	<center><a href="activity7.2.html"> <i style="font-size:48px; color: #005d9b; margin:30px;" class="fa fa-arrow-circle-left"></i></a>
+		
+	 <a href="modules.html"> <i style="font-size:48px; color: #005d9b; margin:30px;" class="fa fa-arrow-circle-right"></i></a></center>	
+</body>
+	<link rel="stylesheet" href="rewards.css">
+	<script src="rewards.js"></script>
+</html>

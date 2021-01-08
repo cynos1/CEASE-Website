@@ -1,0 +1,291 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Untitled Document</title>
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+	
+ 
+</head>
+
+<body>
+	<nav class="topnav" id="myTopnav">
+	<div>
+		<img src="cease logo.png" width="50" height="50" id="logo" alt=""/>
+  <a href="index.html"><strong>Home</strong></a>
+  
+		<div class="navbar">
+  <div class="dropdown">
+    <button class="dropbtn"><strong>My Account</strong> 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="profile page.html"><i class="fa fa-user-circle" aria-hidden="true"></i><strong> My Profile</strong></a>
+      <a href="materials.html"><i class="fa fa-info-circle" aria-hidden="true"></i> <strong>My Materials</strong></a>
+      <a href="#"><i class="fa fa-comments" aria-hidden="true"></i> <strong>Discussion Board</strong></a>
+    </div>
+  </div> 
+</div>  	
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+	</nav>
+	<h3><center>Dealing With Withdrawal symptoms</center></h3>
+	<div class="box">
+	<a class="button" href="#popup1" style="width: 43px;"><strong>Morning</strong></a>
+</div>
+
+<div id="popup1" class="overlay">
+	<div class="popup">
+		<h2>Morning</h2>
+		<p><strong>Add some of the withdrawals you may experience in the morning</strong></p>
+		
+
+		<form name="ShoppingList">
+    <fieldset>
+       <div class="ui-widget"> 
+        <label for="tags">ADD: <input id="tags" type="text" name="name"></label>
+		</div>
+        <label>Date: <input type="date" name="data"></label>
+
+        <input type="button" value="Save"   onclick="SaveItem()">
+        <input type="button" value="Update" onclick="ModifyItem()">
+        <input type="button" value="Delete" onclick="RemoveItem()">
+    </fieldset>
+    <div id="items_table"><br>
+        <h2>Withdrawal symptoms  List</h2>
+        <table id="list" width="400" border="1" bordercolordark="#89287c">
+  <tbody>
+    <tr>
+      <th scope="col">&nbsp;</th>
+      <th scope="col">&nbsp;</th>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+  </tbody>
+</table>
+
+        <label><input type="button" value="Clear" onclick="ClearAll()">
+        </label>
+    </div>
+</form>
+		
+		<a class="close" href="#">&times;</a>
+		
+	</div>
+</div>
+	
+	<div class="box">
+	<a class="button" href="#popup2" style="width: 43px;"><strong>Afternoon</strong></a>
+</div>
+
+<div id="popup2" class="overlay">
+	<div class="popup">
+		<h2>Afternoon</h2>
+		<p><strong>Add some of the withdrawals you may experience in the Afternoon</strong></p>
+		
+		<form name="ShoppingList1">
+    <fieldset>
+       <div class="ui-widget"> 
+        <label for="tags">ADD: <input id="tags1" type="text" name="name"></label>
+		</div>
+        <label>Date: <input type="date" name="data"></label>
+
+        <input type="button" value="Save"   onclick="SaveItem1()">
+        <input type="button" value="Update" onclick="ModifyItem1()">
+        <input type="button" value="Delete" onclick="RemoveItem1()">
+    </fieldset>
+    <div id="items_table1"><br>
+        <h2>Withdrawal symptoms  List</h2>
+        <table id="list1" width="400" border="1" bordercolordark="#89287c">
+  <tbody>
+    <tr>
+      <th scope="col">&nbsp;</th>
+      <th scope="col">&nbsp;</th>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+  </tbody>
+</table>
+
+        <label><input type="button" value="Clear" onclick="ClearAll1()">
+        </label>
+    </div>
+</form>
+		
+		<a class="close" href="#">&times;</a>
+		
+	</div>
+</div>
+	
+	<div class="box">
+	<a class="button" href="#popup3"><strong>Evening</strong></a>
+</div>
+
+<div id="popup3" class="overlay">
+	<div class="popup">
+		<h2>Evening</h2>
+		<a class="close" href="#">&times;</a>
+		<p><strong>Add some of the withdrawals you may experience in the Evening</strong></p>
+		
+		<form name="ShoppingList2">
+    <fieldset>
+       <div class="ui-widget"> 
+        <label for="tags">ADD: <input id="tags2" type="text" name="name"></label>
+		</div>
+        <label>Date: <input type="date" name="data"></label>
+
+        <input type="button" value="Save"   onclick="SaveItem2()">
+        <input type="button" value="Update" onclick="ModifyItem2()">
+        <input type="button" value="Delete" onclick="RemoveItem2()">
+    </fieldset>
+    <div id="items_table2"><br>
+        <h2>Withdrawal symptoms  List</h2>
+        <table id="list2" width="400" border="1" bordercolordark="#89287c">
+  <tbody>
+    <tr>
+      <th scope="col">&nbsp;</th>
+      <th scope="col">&nbsp;</th>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+  </tbody>
+</table>
+
+        <label><input type="button" value="Clear" onclick="ClearAll2()">
+        </label>
+    </div>
+</form>
+		
+	</div>
+</div>
+	
+	<div class="box">
+		<a class="button" href="#popup4"><strong>   Night</strong></a>
+</div>
+
+<div id="popup4" class="overlay">
+	<div class="popup">
+		<h2>Night</h2>
+		<a class="close" href="#">&times;</a>
+		<p><strong>Add some of the withdrawals you may experience in the Night</strong></p>
+		
+		<form name="ShoppingList3">
+    <fieldset>
+       <div class="ui-widget"> 
+        <label for="tags">ADD: <input id="tags3" type="text" name="name"></label>
+		</div>
+        <label>Date: <input type="date" name="data"></label>
+
+        <input type="button" value="Save"   onclick="SaveItem3()">
+        <input type="button" value="Update" onclick="ModifyItem3()">
+        <input type="button" value="Delete" onclick="RemoveItem3()">
+    </fieldset>
+    <div id="items_table3"><br>
+        <h2>Withdrawal symptoms  List</h2>
+        <table id="list3" width="400" border="1" bordercolordark="#89287c">
+  <tbody>
+    <tr>
+      <th scope="col">&nbsp;</th>
+      <th scope="col">&nbsp;</th>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+  </tbody>
+</table>
+
+        <label><input type="button" value="Clear" onclick="ClearAll3()">
+        </label>
+    </div>
+</form>
+		
+	
+	</div>
+	</div>
+	<br><br>
+	<center><a href="new activity 16.html"> <i style="font-size:48px; color: #89287c; margin:30px;" class="fa fa-arrow-circle-left"></i></a>
+		
+	 <a href="activity6.3.html"> <i style="font-size:48px; color: #89287c; margin:30px;" class="fa fa-arrow-circle-right"></i></a></center>	
+
+	
+</body>
+	<link rel="stylesheet" href="activity6.2.css">
+	<script src="activity6.2.js"></script>
+</html>

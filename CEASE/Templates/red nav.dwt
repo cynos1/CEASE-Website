@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+	<link rel="stylesheet" href="../new homepage stylesheet.css">
+<!-- TemplateBeginEditable name="doctitle" -->
+	<title>Untitled Document</title>
+	<!-- TemplateEndEditable -->
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+</head>
+
+<body>
+	<nav class="topnav" id="myTopnav">
+	<div>
+  <a href="../index.html">Home</a>
+  <a href="#news">Login</a>
+  <a href="#contact">Discussion Board</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+	</nav>
+	
+</body>
+	<script src="../new homepage.js"></script>
+</html>
