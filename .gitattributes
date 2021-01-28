@@ -1,0 +1,5 @@
+.firebaserc merge=ours
+database.rules.json merge=ours
+firebase.json merge=ours
+firestore.indexes.json merge=ours
+firestore.rules merge=ours
