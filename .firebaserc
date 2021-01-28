@@ -1,5 +1,6 @@
 {
   "projects": {
-    "default": "cease-project"
+    "main": "cease-project-a8f4b",
+    "default": "cease-project-a8f4b"
   }
 }
