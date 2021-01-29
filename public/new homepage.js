@@ -36,12 +36,3 @@ $('.carousel').carousel({
 
 
 
-const firebaseConfig = {
-  apiKey: "AIzaSyDslWzjWJlzaxFATIuFrLH4P_3-YbwqbjQ",
-  authDomain: "cease2-0.firebaseapp.com",
-  projectId: "cease2-0",
-  storageBucket: "cease2-0.appspot.com",
-  messagingSenderId: "293413559455",
-  appId: "1:293413559455:web:8f163f26e81d2c6e5896aa",
-  measurementId: "G-FGHDPYH63W"
-};
