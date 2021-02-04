@@ -46,12 +46,15 @@ function authorizeAccount(){
         (userCredentials)=>{
             var user = userCredentials.user;
             user.updateProfile({displayName: userName});
-            users.doc(UID).set({
-                'user-name': userName,
-                'registered-code': UID
+            users.doc(userCredentials.user.uid).set({
+                username: userName,
+                code: UID,
             }).then(
-                ()=>{console.log("Added User.")}
-            );
+                ()=>{
+                    console.log("Added user.")
+                }).catch((error) => {
+                    console.error("Error writing document: ", error);
+                });
             sessionStorage.setItem("User", user);
             location.href='modulesurvey.html';
         }

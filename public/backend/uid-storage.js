@@ -22,7 +22,7 @@ function verifyUID(){
     var userCode = document.getElementById("myInput").value;
     var storage = window.sessionStorage;
     incorrectpwd.style.display = "none";
-    users.where("registered-code","==", userCode)
+    users.where("code","==", userCode)
                 .get().then(
                     (snapshot)=>{
                         if (snapshot.docs.length){
