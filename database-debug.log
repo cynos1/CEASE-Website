@@ -3,5 +3,10 @@ WARNING: Illegal reflective access by io.netty.util.internal.ReflectionUtil (fil
 WARNING: Please consider reporting this to the maintainers of io.netty.util.internal.ReflectionUtil
 WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
 WARNING: All illegal access operations will be denied in a future release
-12:00:38.214 [NamespaceSystem-akka.actor.default-dispatcher-4] INFO akka.event.slf4j.Slf4jLogger - Slf4jLogger started
-12:00:38.384 [main] INFO com.firebase.server.forge.App$ - Listening at localhost:9000
+00:42:22.483 [NamespaceSystem-akka.actor.default-dispatcher-4] INFO akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+00:42:22.656 [main] INFO com.firebase.server.forge.App$ - Listening at localhost:9000
+02:15:05.343 [Thread-0] INFO com.firebase.server.forge.App$ - Attempting graceful shutdown.
+02:15:05.366 [NamespaceSystem-akka.actor.default-dispatcher-6] INFO com.firebase.core.namespace.Terminator$Terminator - 1 actors left to terminate: cease-project-a8f4b
+02:15:05.373 [NamespaceSystem-akka.actor.default-dispatcher-10] INFO com.firebase.core.namespace.NamespaceActor - Stopping namespace actor for cease-project-a8f4b
+02:15:05.374 [NamespaceSystem-akka.actor.default-dispatcher-10] INFO com.firebase.core.namespace.NamespaceActor - Gauges removed for cease-project-a8f4b
+02:15:05.378 [Thread-0] INFO com.firebase.server.forge.App$ - Graceful shutdown complete.
