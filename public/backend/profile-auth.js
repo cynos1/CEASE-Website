@@ -43,12 +43,12 @@ function authorizeAccount(){
                     users.doc(user.uid).set({
                         username: userName,
                         code: UID,
-                    }).then(
+                    }, { merge: true }).then(
                         ()=>{
-                            console.log("Created user document.");
+                            console.log("Added to user profile.");
                             location.href='modulesurvey.html';
                         }).catch((error) => {
-                            console.error("Error writing document: ", error);
+                            console.error("Profile doesn't exist: ", error);
                     });
                 }
             ).catch((error)=>{
