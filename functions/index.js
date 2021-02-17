@@ -6,15 +6,33 @@
   //functions.logger.info("Hello logs!", {structuredData: true});
  // response.send("Hello from Firebase!");
  //});
+
 // The Cloud Functions for Firebase SDK to create Cloud Functions and setup triggers.
 const functions = require('firebase-functions');
-
-// The Firebase Admin SDK to access Firestore.
-const admin = require('firebase-admin');
-admin.initializeApp();
-
 //default reference
+const admin = require('firebase-admin');
+// The Firebase Admin SDK to access Firestore.
+admin.initializeApp({
+  credential: admin.credential.applicationDefault(),
+  databaseURL: "https://cease-project-a8f4b-default-rtdb.firebaseio.com"
+});
+const db = admin.firestore();
 
+// The Cloud Functions
+exports.verifyUnusedCode = functions.https.onCall((data, context) =>{
+  const userRef = db.collection('users');
+  return userRef.where('code', '==', data.code)
+  .get()
+  .then((snapshot)=>{
+    if (snapshot.empty){
+      return true
+    }
+    return false;
+  })
+  .catch((error)=>{
+    return error;
+  });
+});
 
 exports.userSignUp = functions.auth.user().onCreate(user=>{
   return admin.firestore().collection('users').doc('default').get().then(

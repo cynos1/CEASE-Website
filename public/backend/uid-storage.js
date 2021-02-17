@@ -1,11 +1,12 @@
 
-const uidCacheRef = database.collection("codes").doc("codelist");
+const idCodeRef = database.collection("codes").doc("codelist");
 const users = database.collection("users");
 const incorrectpwd = document.getElementById("incorrectpwd");
+const VerifyUnusedCode = firebase.functions().httpsCallable('verifyUnusedCode');
 var used = [];
 var codes = [];
 
-uidCacheRef.get().then(function(doc) {
+idCodeRef.get().then((doc)=>{
     if (doc.exists) {
         var cache = doc.data();
         codes = cache['codes'];
@@ -17,23 +18,28 @@ uidCacheRef.get().then(function(doc) {
 });
 
 function verifyUID(){
+    event.preventDefault();
     console.log(codes);
     var valid = true;
     var userCode = document.getElementById("myInput").value;
     var storage = window.sessionStorage;
     incorrectpwd.style.display = "none";
-    users.where("code","==", userCode)
-                .get().then(
-                    (snapshot)=>{
-                        if (snapshot.docs.length){
-                            valid = false;
-                        }
-                    });
-    if ((codes.indexOf(userCode) != -1) && valid){
+
+    if ((codes.indexOf(userCode) != -1)){
         sessionStorage.setItem("UID", userCode);
-        console.log('Valid Code');
-        return true;
+        VerifyUnusedCode({code: userCode}).then(
+            (result)=>{
+                if (result.data == true){
+                    console.log("Valid Code");
+                    location.href='profile page.html';
+                }
+                else{
+                    incorrectpwd.style.display = "block";
+                }
+            }).catch((error) => {
+                console.error("Couldn't add to used codes", error);
+        });
+    } else{
+        incorrectpwd.style.display = "block";
     }
-    incorrectpwd.style.display = "block";
-    return false;
 }
