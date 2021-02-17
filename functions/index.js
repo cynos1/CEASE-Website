@@ -34,10 +34,10 @@ exports.verifyUnusedCode = functions.https.onCall((data, context) =>{
 exports.userSignUp = functions.auth.user().onCreate(user=>{
   return admin.firestore().collection('users').doc('default').get().then(
     (doc) => {
-      var achievements = doc.data().achievements;
+      var achievements = doc.data().badges;
       admin.firestore().collection('users').doc(user.uid).set({
         email: user.email,
-        achievements: achievements,
+        badges: achievements,
       }, { merge: true });
     });
 });
