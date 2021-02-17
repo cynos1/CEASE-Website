@@ -5,3 +5,8 @@ WARNING: Use --illegal-access=warn to enable warnings of further illegal reflect
 WARNING: All illegal access operations will be denied in a future release
 11:43:19.388 [NamespaceSystem-akka.actor.default-dispatcher-4] INFO akka.event.slf4j.Slf4jLogger - Slf4jLogger started
 11:43:19.541 [main] INFO com.firebase.server.forge.App$ - Listening at localhost:9000
+12:00:09.318 [Thread-0] INFO com.firebase.server.forge.App$ - Attempting graceful shutdown.
+12:00:09.332 [NamespaceSystem-akka.actor.default-dispatcher-5] INFO com.firebase.core.namespace.Terminator$Terminator - 1 actors left to terminate: cease-project-a8f4b
+12:00:09.367 [NamespaceSystem-akka.actor.default-dispatcher-5] INFO com.firebase.core.namespace.NamespaceActor - Stopping namespace actor for cease-project-a8f4b
+12:00:09.368 [NamespaceSystem-akka.actor.default-dispatcher-5] INFO com.firebase.core.namespace.NamespaceActor - Gauges removed for cease-project-a8f4b
+12:00:09.376 [Thread-0] INFO com.firebase.server.forge.App$ - Graceful shutdown complete.

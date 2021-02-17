@@ -12,10 +12,7 @@ const functions = require('firebase-functions');
 //default reference
 const admin = require('firebase-admin');
 // The Firebase Admin SDK to access Firestore.
-admin.initializeApp({
-  credential: admin.credential.applicationDefault(),
-  databaseURL: "https://cease-project-a8f4b-default-rtdb.firebaseio.com"
-});
+admin.initializeApp();
 const db = admin.firestore();
 
 // The Cloud Functions
