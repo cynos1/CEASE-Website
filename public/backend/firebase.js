@@ -5,5 +5,6 @@ firebase.analytics();
 // Create references for backend-related items.
 const auth = firebase.auth();
 const database = firebase.firestore();
-//Timestamps for access.
+// Timestamps for access.
 database.settings({ timestampsInSnapshots:true });
+// Set up messegger for Push Notifications.
