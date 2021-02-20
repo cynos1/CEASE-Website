@@ -8,17 +8,17 @@ function myFunction() {
   }
 }
 
+// Hide Error
+function hideError(){
+  var incorrectPwd = document.getElementById("incorrectpwd");
+  if (incorrectPwd.style.display == "block"){
+    incorrectPwd.style.display = "none";
+  }
+}
+
 //show code
 function showpassword() {
   var x = document.getElementById("myInput");
-  if (x.type === "password") {
-    x.type = "text";
-  } else {
-    x.type = "password";
-  }
-}
-function showpassword() {
-  var x = document.getElementById("myInput1");
   if (x.type === "password") {
     x.type = "text";
   } else {

@@ -5,13 +5,14 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="new login.css">
 <title>Login</title>
+<!--UID verification-->
 </head>
 
 <body>
 	<nav class="topnav" id="myTopnav">
 	<div>
 		<img src="cease logo.png" width="50" height="50" id="logo" alt=""/>
-  <a href="public/index.html"><strong>Home</strong></a>
+  <a href="/index.html"><strong>Home</strong></a>
  <!-- <a href="modulesurvey.html">Modules</a>-->
   <a href="javascript:void(0);" class="icon" onclick="myFunction()">
     <i class="fa fa-bars"></i>
@@ -21,13 +22,16 @@
 	<br>
 	<br>
 	<div id="frame" role="content">
-	<form action="profile page.html" >
+	<form onsubmit="verifyUID()">
   <div class="container">
     <h1>Signup</h1>
     <p>Please enter your code</p>
     <hr>
-    <label for="psw"></label>
-    <input type="password" placeholder="Enter Code" name="psw" required id="myInput">
+	<label for="psw"></label>
+	<div id="incorrectpwd" style="display: none;">
+		<p style="color: red"> Invalid code</p>
+	</div>
+    <input type="password" placeholder="Enter Code" onfocus="hideError()" name="psw" required id="myInput">
 	  
 	  <br>
 	  <input type="checkbox" onClick="showpassword()">Show Code
@@ -42,9 +46,20 @@
 	  </div>-->
   </div>
 </form>
-	</div>
-	
-	
+	</div>	
+	<script src="/__/firebase/8.2.7/firebase-app.js"></script>
+	<!-- Include the core SDK first -->
+	<!-- include only the Firebase features as you need -->
+	<script src="/__/firebase/8.2.7/firebase-auth.js"></script>
+	<script src="/__/firebase/8.2.7/firebase-database.js"></script>
+	<script src="/__/firebase/8.2.7/firebase-firestore.js"></script>
+	<script src="/__/firebase/8.2.7/firebase-functions.js"></script>
+	<script src="/__/firebase/8.2.7/firebase-remote-config.js"></script>
+	<script src="/__/firebase/8.2.7/firebase-analytics.js"></script>
+	<script src="/__/firebase/8.2.7/firebase-messaging.js"></script>
+	<script src="/__/firebase/init.js"></script>
+	<script type = 'text/javascript' src="backend/firebase.js"></script>
+	<script type='text/javascript' src="backend/uid-storage.js"></script>	
 	
 </body>
 	<script src="new login.js"></script>
